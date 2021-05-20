@@ -7,16 +7,17 @@
     <title>Diagne Axel</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css" >
-    <link rel="stylesheet" href="css/nav.css">
+    
 
 </head>
 <body>
@@ -102,57 +103,90 @@
         </div>
 
       </section>
-      
-      <section id="portfolio">
+
+      <section class="portfolio" id="portfolio">
         <span class="balise"> &#60;h4 &#62;</span><br/><br/>
-          <h4 class="font-title">Portfolio</h4>
-          <span class="balise">&#60;/h4 &#62;</span>
-        <div class="portfolio">
-          <div id="box">
-          
-            <div><span style="--i:1;"><div class="box-div">
-              <h6>Web Development</h6>
-              <p>
-                Création d'un site vitrine pour un pâtissier indépendant a Bussy le chateau.
-              </p>
-              <a href="http://hairdreams.diagneaxel.com"  target="_blank" class="cta">Voir détails</a>
-              <img class="img-portfolio" src="img/alapat.jpg" alt="Image de developpment mignature">
-            </div></span></div>
-
-            <span style="--i:2;"><div class="box-div">              
+        <h4 class="font-title">Portfolio</h4>
+        <span class="balise">&#60;/h4 &#62;</span>
+        <div class="container-folio">
+                       
+          <div class="portfolio-item">
+            <div class="portfolio-img " data-aos="fade-up" data-aos-delay="300">
               <img class="img-portfolio" src="img/xtend.jpg" alt="Image de developpment mignature">
-              <h6>Web Development</h6>                    
-                    <p>
-                        Création d'un site vitrine pour une prothésiste ongulaire sur Tournai Belgique.
-                    </p>
-                    <a href="https://xtenbyemy.be/" target="_blank" class="cta">Voir détails</a>
-            </div></span>
-
-            <span style="--i:3;"><div class="box-div">
-              <h6>Web Development</h6>
-                    <p>
-                        Création d'un site vitrine pour un restaurant situé à Sagone en Corse.
-                    </p>
-                    <a href="http://restaurant-legraindesable-sagone.fr/" target="_blank" class="cta">Voir détails</a>
-              <img class="img-portfolio" src="img/GDS.jpg" alt="Image de developpment mignature">
-            </div></span>
-
-            <span style="--i:4;"><div class="box-div">              
-              <img class="img-portfolio" src="img/hvrs.jpg" alt="Image de developpment mignature">
-              <h6>Web Development</h6>                    
-                    <p>
-                        Création d'un site vitrine suite à un exercice en ecole.
-                    </p>
-                    <a href="http://www.hrvs.diagneaxel.com/" target="_blank" class="cta">Voir détails</a>
-            </div></span>       
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="600">
+                <h6>Web Development</h6>
+                <p>
+                    Création d'un site vitrine pour une prothésiste ongulaire sur Tournai Belgique.
+                </p>
+                <a href="http://xtenbyemy.be/" target="_blank" class="cta">Voir détails</a>
+            </div>
           </div>
-       </div>
-        
-        
-      </section>
+          <hr class="hr-folio">
+          <div class="portfolio-item">
+              <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                  <h6>Web Development</h6>                  
+                  <p>
+                    Création d'un site vitrine pour un pâtissier indépendant a Bussy le chateau.
+                  </p>
+                  <a href="http://hairdreams.diagneaxel.com"  target="_blank" class="cta">Voir détails</a>
+              </div>
+              <div class="portfolio-img " data-aos="fade-up" data-aos-delay="600">
+                  <img src="img/alapat.jpg" alt="Image responsive vue sous plusieurs angles">
+              </div>
+          </div>
+          
+          <hr class="hr-folio">
+
+          <div class="portfolio-item">
+            <div class="portfolio-img " data-aos="fade-up" data-aos-delay="600">
+              <img src="img/GDS.jpg" alt="Image responsive vue sous plusieurs angles">
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                <h6>Web Development</h6>
+                <p>
+                  Création d'un site vitrine pour un restaurant situé à Sagone en Corse.
+                </p>
+                <a href="http://restaurant-legraindesable-sagone.fr/"  target="_blank"  class="cta">Voir détails</a>
+            </div>
+          </div>
+
+          <hr class="hr-folio">
+
+          <div class="portfolio-item">     
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="600">
+                <h6>Web Development</h6>
+                <p>
+                  Création d'un site vitrine suite à un exercice en école.
+                </p>
+                <a href="http://www.hrvs.diagneaxel.com/" target="_blank" class="cta">Voir détails</a>
+            </div>
+            <div class="portfolio-img" data-aos="fade-up" data-aos-delay="300">
+              <img src="img/hvrs.jpg" alt="Image responsive vue sous plusieurs angles">
+            </div>
+          </div>
+          <hr class="hr-folio">
+
+            <div class="portfolio-item">
+              <div class="portfolio-img " data-aos="fade-up" data-aos-delay="600">
+                <img src="img/bowling.jpg" alt="Image responsive vue sous plusieurs angles">
+              </div>
+              <div class="portfolio-description " data-aos="fade-up" data-aos-delay="300">
+                  <h6>Web Development</h6>
+                  <p>
+                      Création d'un site vitrine pour un glacier situé a Sagone en Corse
+                  </p>
+                  <a href="http://www.bowling.diagneaxel.com/" target="_blank" class="cta">Voir détails</a>
+              </div>
+            </div>           
+            <hr class="hr-folio">
+
+        </div>
+    </section>
       
       
-    
+      
+   
 
     <footer id="footer">
       <div class="footer-grid-top">
@@ -198,9 +232,16 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     
-<link rel="stylesheet" href="js/main.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({easing: 'ease',
+      duration: 1800,
+      once: true});
+    </script>
+    <link rel="stylesheet" href="js/main.js">
+    
 </body>
 
 

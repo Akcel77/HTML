@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: diagneaxel.com
+Token: 88c92c10c02d981010af225ec8df4f6059814039a5f71c4541d5f085c17dd226

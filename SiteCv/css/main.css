@@ -43,6 +43,14 @@ ul{
 .font-title{
   font-family: 'Ubuntu', sans-serif;
 }
+.hr-folio{
+  color : #264653;
+  width: 75%;
+}
+p{
+  text-align: justify;
+}
+
 
 
 
@@ -198,6 +206,7 @@ header{
 #about-me .balise{
   left: 5%;
   font-size: 2rem;
+  
 }
 h2{
   font-size: 2rem;
@@ -234,6 +243,8 @@ h2{
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-right: 5rem;
+  
   
 }
 
@@ -250,18 +261,9 @@ h3{
   display: block;
   margin: 2rem auto;
   width: 30%;
-  animation: roll 15s linear infinite;
+  
 }
-@keyframes roll {
-  0%
-  {
-      transform: perspective(1000px) rotateZ(0deg)    ;
-  }
-  100%
-  {
-      transform: perspective(1000px) rotateZ(360deg) ;
-  }
-}
+
 
 #skill-p2{
   width: 100%;
@@ -297,68 +299,29 @@ h4{
 font-size: 2rem;
 margin-left:10rem;
 }
-.portfolio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  
-}
-#box{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  transform-style: preserve-3d;
-  animation: animate 40s linear infinite;
-  
+.portfolio-item img{
+  width: 40%;
+  flex-basis: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
-#box span{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 90deg)) translateZ(300px);
-  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent,#0004);
+.portfolio-description{
+  flex-basis: 150%;
 }
-#box span div{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-  background: linear-gradient(to bottom,rgb(223, 196, 106)80%,rgb(244, 162, 97) 100%);
-}
-@keyframes animate {
-  0%
-  {
-      transform: perspective(1000px) rotateY(0deg)    ;
-  }
-  100%
-  {
-      transform: perspective(1000px) rotateY(360deg) ;
-  }
-}
-.box-div{
+.container-folio{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: rgb(244, 162, 97) 1px solid;
-}
-.box-div p{
-  font-size: 1rem;
-  padding: 1rem;
-}
-.img-portfolio{
-  display: block;
+  margin: 0 auto;
   width: 75%;
-  margin:  0 auto;
+}
+.portfolio-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem auto;
 }
 
 
@@ -468,7 +431,7 @@ h5{
 }
 @media screen and (max-width: 1250px){
   .portfolio{
-    margin-top: 9rem;
+    padding-top: 9rem;
   }
   .skill-img{
     width: 40%;
@@ -492,11 +455,25 @@ h5{
     width: 60%;
   }
   .portfolio{
-    margin-top:15rem;
+    padding-top:15rem;
   }
   .skill-img{
     margin-top:10rem;
   }
+
+  .portfolio-item img{
+    width: 60%;
+  }  
+  .portfolio-description{
+    margin-top: 2rem;
+  }
+  .portfolio-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
+
   .footer-left-skill{
     margin-left: 1rem;
     padding-right: 2rem;
@@ -547,6 +524,12 @@ h5{
     left :40%;
   }
  
+  .portfolio-item img{
+    width: 60%;
+  } 
+  .container-folio{
+    width: 85%;
+  }
   
  
   .footer-right-skill span {
