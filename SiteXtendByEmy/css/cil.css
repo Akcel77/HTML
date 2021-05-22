@@ -1,0 +1,91 @@
+.info-cil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+.cil-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.photos-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.ongle-img{
+    width: 20%;
+    height: 100%;
+    
+}
+.cil-p1{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+.cils-main p{
+    text-align: justify;
+    margin-right: 2rem;
+}
+.info-para-cil-2,.info-illustration-cil-p2,.info-prix-cil-p2{
+    display: block;
+    margin: 3rem auto;
+    flex-basis:33% ;
+}
+.tarif-block{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.card-header{
+    background-color: #e8c2d1;
+}
+.card-body span{
+    margin-left: 3rem;
+    float: right;
+    text-align: right;
+}
+.tarif-body-ongle{
+    display: flex;
+    flex-direction: row;
+}
+.tarif-body-ongle ul{
+    margin: 1rem 2rem;
+}
+.strong-li{
+    margin-left: 2rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 1100px){
+    .info-cil{
+        flex-direction: column-reverse;
+    }
+    .cil-imgs{
+        flex-direction: column;
+        
+    }
+    .cil-p1{
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .tarif-body-ongle{
+        
+        flex-direction: column;
+    }
+    .photos-imgs{
+        flex-direction: column;
+    }
+    .ongle-img{
+        width: 50%;
+        height: 100%;
+        margin: 2rem;
+        
+    }
+}

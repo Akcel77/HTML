@@ -1,0 +1,469 @@
+/*Start global*/
+
+
+/* Couleurs
+
+rose: #e8c2d1;
+blanc casse : #f5f6fa;
+vert : #55efc4;
+vert fonce : #00b894;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #00b894;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f5f6fa;
+}
+
+#header {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Satisfy', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+hr{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background: #00b894;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+strong{
+    font-size: 2rem;
+}
+.sidenav {
+    height: 100%;    
+    position: fixed;
+    z-index:1; 
+    top: 0; 
+    right: 0;    
+    overflow-x: hidden; 
+    padding-top:150px;
+}
+.sidenav li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1rem;
+}
+.sidenav a{
+    padding: 1rem;
+    border-radius: 100%;
+}
+.phone-logo{
+    width: 2rem;
+}
+.phone-logo:hover{
+    
+        transform: scale(2);
+      
+}
+/*End global*/
+
+
+/*Start header*/
+
+.navbar {
+    z-index: 50;
+    width: 100%;
+    text-align: center;
+    
+    font-family: 'Satisfy', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    width: 100%;
+    background-image: url("../images/marbrerose.jpg");
+    background-size: cover;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid pink;
+}
+
+.home {
+    width: 100%;
+    height: 90vh;  
+   
+}
+.header-block{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.header-info{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.avatar-header{
+    width: 50%;
+}
+.home p{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 1.5rem;
+}
+
+nav li {
+    margin: 0.5rem;
+}
+
+
+/* END HEADER*/
+
+
+/* START ABOUT */
+
+.about {
+    margin: 0 auto;
+}
+
+.about .about-div {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 3rem auto;
+}
+
+.about h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.ab2 {
+    flex-basis: 33%;
+    color: #212121;
+    margin: 4rem 5rem;
+    text-align: justify;
+}
+
+.ab2 p {
+    font-size: 1rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.ab3 {
+    margin: 0 auto;
+}
+
+.social_media {
+    margin-top: 15rem;
+}
+
+.instagram {
+    background: linear-gradient(to bottom, #4466ca, #e44674);
+    font-size: 20px;
+    color: #fff;
+}
+
+.facebook {
+    background-color: #406ac9;
+    font-size: 20px;
+    color: #fff;
+}
+.avatar{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+/* END ABOUT */
+
+
+/*START PORTFOLIO */
+
+#portfolio {
+    width: 70%;
+    margin: 5rem auto;
+}
+
+
+/* END PORTFOLIO */
+
+
+
+
+
+/* START SOCIAL */
+#social {
+    display: block;
+    margin: 0 auto;
+}
+.social-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social h1 {
+    text-align: center;
+    padding-top: 3rem;
+    margin: 2rem auto;
+    color: #212121;
+}
+
+.insta-1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.insta-2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+}
+
+.insta-paragraph h3 {
+    margin: 1rem 2rem;
+    font-size: 3rem;
+}
+
+.insta-paragraph p {
+    text-align: justify;
+    margin: 1rem 2rem;
+}
+
+.fb-para {
+    width: 75%;
+}
+
+.insta-photo {
+    margin-top: 3rem;
+}
+.avatar-social{
+    width: 95%;
+}
+
+/* END SOCIAL */
+
+
+/* START FOOTER */
+
+footer {
+    margin: 0;
+    width: 100%;
+    background-image: url("../images/marbrerose.jpg");
+    background-position: center top;
+    background-size: cover;
+    padding-bottom: 2rem;
+    border-top: 1px solid black;
+}
+.contact-footer a,.ariane a, .copy a{
+    color: #223c92!important;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.contact-footer a {
+    color: #fff;
+}
+
+.contact-footer a:hover {
+    color: #111;
+}
+
+.map {
+    margin: 0 auto;
+}
+
+.bottom_border {
+    margin-top: 2rem;
+}
+
+.social_footer_ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem auto ;
+    list-style-type: none;
+}
+
+
+
+.ariane {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.ariane a {
+    color: #fff
+}
+
+.ariane a:hover {
+    color: #111
+}
+
+@media screen and (max-width: 1300px) {
+    .about .about-div {
+        width: 90%;
+        margin: 3rem auto;
+    }
+   
+}
+@media screen and (max-width: 1100px){
+    .avatar-header{
+        width: 80%;
+    }
+    .header-info{
+        top:25%;
+        left: 30%;
+    }
+    .avatar-header{
+        display: block;
+        margin: 1rem auto;
+    }
+    h1{
+        display: none;
+    }
+    .insta-1{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 990px) {
+    .home {
+        background-position: 15% 55%;
+    }
+    .header-info{
+        top:20%;
+        left: 35%;
+    }
+    
+    .emy-about {
+        margin-top: 6rem;
+    }
+    #social {
+        max-width: fit-content;
+    }
+    #portfolio {
+        width: 90%;
+        margin: 5rem auto;
+    }
+    .map {
+        display: none;
+    }
+    .footer-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+    .services .tarifs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0.7rem;
+    }
+    .insta-1,
+    .insta-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .insta-photo,
+    .facebook-block {
+        margin: 3rem auto;
+        background-color: #fff;
+        text-align: center;
+    }
+    .fb-para {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ab2 {
+        margin: 4rem auto;
+    }
+    .ab2 h2 {
+        font-size: 3rem
+    }
+    .ariane{       
+        flex-direction: column;    
+    }
+    .ariane-foot li{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about .about-div {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header-info{
+        top:90%;
+        left: 35%;
+    }
+    .header-info h1{
+        font-size: 1.5rem;
+    }
+    .header-info p{
+       font-size: 1rem;
+    }
+    h1 {
+        display: block;
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .insta-paragraph h3 {
+        margin: 1rem 1rem;
+        font-size: 3rem;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+    .img-site {
+        max-width: 75%;
+    }
+    #portfolio {
+        width: 100%;
+    }
+    .services .tarifs {
+        grid-template-columns: 1fr;
+    }
+    .facebook-block {
+        display: none;
+    }
+}
