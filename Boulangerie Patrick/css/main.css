@@ -1,0 +1,307 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    p {
+        margin: 1rem auto;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+    
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        margin: 2rem auto;
+    }
+    
+    h5,
+    h3 {
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    h4 {
+        margin: 2rem auto;
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+    }
+    
+    p {
+        font-family: 'Zilla Slab', serif;
+    }
+    /* NAVBAR */
+    
+    .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .navbar {
+        background-color: #222f3e!important;
+        color: #fff;
+    }
+    
+    .social-part .fa {
+        padding-right: 20px;
+    }
+    
+    .nav-link {
+        color: #fff!important;
+    }
+    
+    ul li a {
+        margin-right: 20px;
+    }
+    
+    .social-part {
+        text-align: center;
+    }
+    
+    .banner-small {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .banner {
+        display: none;
+    }
+    
+    .navbar-light .navbar-toggler {
+        color: #d98636!important;
+        border-color: #d98636!important;
+        border: 1px solid;
+    }
+    
+    .navbar-light .navbar-toggler-icon {
+        margin: 0 auto;
+    }
+    
+    .logo-banner {
+        width: 75%;
+    }
+    /* END NAVBAR */
+    /* BIO */
+    
+    .photo-bio {
+        margin: 2rem auto;
+        text-align: center;
+    }
+    
+    .para-bio span {
+        font-style: italic;
+    }
+    
+    .photo-bio img {
+        max-width: 90%;
+        margin: 2rem auto;
+    }
+    
+    .horaire-info h3 {
+        margin: 2rem auto;
+        font-style: italic;
+        font-weight: bold;
+    }
+    /* END BIO */
+    /* INFO */
+    
+    .photo-info {
+        margin: 2rem auto;
+        text-align: center;
+    }
+    
+    .photo-bio info {
+        max-width: 90%;
+        margin: 2rem auto;
+    }
+    
+    .mx-2 {
+        margin: 2rem auto !important;
+    }
+    /* END INFO */
+    /* CARTE */
+    
+    .carte-patisserie {
+        height: 40vh;
+        background-image: url("../image/tarte.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin-bottom: 5rem;
+        opacity: 0.85;
+    }
+    
+    .carte-vienoiserie {
+        height: 40vh;
+        background-image: url("../image/vienoiserie.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin-bottom: 5rem;
+        opacity: 0.85;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .card-patisserie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .card {
+        margin: 2rem auto;
+        width: 50%;
+    }
+    
+    span {
+        float: right;
+        margin-left: 4rem;
+    }
+    /* END CARTE */
+    /* FOOTER */
+    
+    .nav-footer {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    .nav-footer li {
+        margin: 0.5rem;
+    }
+    
+    a {
+        color: #d98636;
+        text-decoration: none;
+    }
+    
+    .horaire-livraison {
+        margin: 1rem auto;
+        text-align: center;
+    }
+    
+    .horaire-we {
+        margin: 1rem auto;
+        text-align: center;
+    }
+    
+    .contact {
+        text-align: center;
+    }
+    
+    .text-center {
+        font-size: 0.7rem;
+        font-style: italic;
+    }
+    
+    footer {
+        background-color: #222f3e;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* END FOOTER */
+    
+    @media only screen and (min-width: 750px) {
+        .logo-banner {
+            padding: 1rem;
+        }
+        .card-patisserie {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .banner-small {
+            display: none;
+        }
+        .banner {
+            display: inline;
+        }
+        .navbar-expand-sm .navbar-collapse {
+            justify-content: space-between!important;
+        }
+        .horaire {
+            display: flex;
+            flex-direction: row;
+        }
+        .horaire ul {
+            margin: 3rem auto;
+            padding: 2rem;
+        }
+        .phone {
+            margin-left: 2rem;
+        }
+        .bio {
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1fr;
+        }
+        .photo-info2 {
+            margin: 0;
+            max-width: 70%;
+        }
+        .photo-bio {
+            margin: 0;
+        }
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .card-patisserie {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .navbar-expand-sm .navbar-collapse {
+            justify-content: space-between!important;
+        }
+        .bio {
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1fr;
+        }
+        .photo-info2 {
+            margin: 0;
+            max-width: 70%;
+        }
+        .para-bio {
+            margin: 8rem auto!important;
+        }
+        .bio img {
+            width: 60%;
+        }
+        .bio {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .info-para-bloc {
+            width: 70%;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1fr;
+        }
+        .photo-info {
+            margin-left: 3rem;
+        }
+        .photo-bio {
+            margin-top: 5rem;
+        }
+        .horaire-info {
+            margin: 2rem auto;
+        }
+    }
